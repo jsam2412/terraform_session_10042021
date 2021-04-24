@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 variable "elb_names" {
-  type    = list
+  type    = list(any)
   default = ["dev-loadbalancer", "stage-loadbalanacer", "prod-loadbalancer"]
 }
 
